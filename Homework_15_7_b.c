@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void sapXepTangDan(uint8_t mang[], int length){
+void sapXepTangDan(int mang[], int length){
     for(int i=0;i< length-1;i++){
         for(int j=1; j<length;j++)
         {
@@ -17,7 +17,7 @@ void sapXepTangDan(uint8_t mang[], int length){
     }  
 }
 
-void sapXepGiamDan(uint8_t mang[], int length){
+void sapXepGiamDan(int mang[], int length){
     for(int i=0;i< lenght-1;i++){
         for(int j=1; j < lenght;j++)
         {
@@ -34,7 +34,7 @@ void sapXepGiamDan(uint8_t mang[], int length){
     }  
 }
 
-void max(uint8_t mang[], int length)
+void max(int mang[], int length)
 {
     max = mang[0];
     for(int i=0; i<length;i++)
@@ -44,7 +44,7 @@ void max(uint8_t mang[], int length)
     printf("\nMax: %d",max);
 }
 
-void min(uint8_t mang[], int length)
+void min(int mang[], int length)
 {
     min=mang[0];
     for(int i=0; i<length;i++)
