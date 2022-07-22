@@ -1,0 +1,17 @@
+int test_atoi(char array[]){
+    int val=0;
+    for(int i=0; array[i] != '\0';i++){
+        val = val * 10 + array[i] - 48;
+    }
+    return val;
+}
+
+int test_strtod(char array[]){
+    int val=0;
+    for(int i=0; array[i] != '\0';i++){
+        if(array[i]>=48 && array[i]<=57){
+            val = val *10 + array[i] - 48;
+        }
+    }
+    return val;
+}
